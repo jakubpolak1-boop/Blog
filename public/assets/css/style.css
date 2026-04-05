@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ece8df;
+    color: #222;
+}
+
+.obal {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.horna_cast {
+    background: #1f2430;
+    color: white;
+    padding: 20px 0;
+}
+
+.horna_cast .obal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horna_cast h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.horna_cast h1 a,
+.horna_cast nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.horna_cast nav a {
+    margin-left: 15px;
+}
+
+.karta {
+    background: white;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+
+.paticka {
+    background: #1f2430;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.admin_obal {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin_menu {
+    width: 220px;
+    background: #1f2430;
+    color: white;
+    padding: 20px;
+}
+
+.admin_menu h2 {
+    margin-top: 0;
+}
+
+.admin_menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+.admin_obsah {
+    flex: 1;
+    padding: 30px;
+}
+
+.prihlasenie {
+    max-width: 450px;
+    margin: 40px auto;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form button,
+.tlacidlo {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 16px;
+    background: #b33a2b;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
