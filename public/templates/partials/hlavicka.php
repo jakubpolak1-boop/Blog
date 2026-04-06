@@ -9,14 +9,16 @@
 <body>
 
 <header class="horna_cast">
-    <div class="obal">
-        <h1><a href="<?= WEB ?>/index.php"><?= NAZOV_WEBU ?></a></h1>
+    <div class="obal horna_cast_vnutro">
+        <div class="logo_cast">
+            <h1><a href="<?= WEB ?>/index.php"><?= NAZOV_WEBU ?></a></h1>
+        </div>
 
-        <nav>
+        <nav class="menu">
             <a href="<?= WEB ?>/index.php">Domov</a>
             <a href="<?= WEB ?>/admin/login.php">Admin</a>
         </nav>
     </div>
 </header>
 
-<main class="obal">
+<main class="obal hlavny_obsah">
