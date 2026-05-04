@@ -12,6 +12,7 @@
     <aside class="admin_menu">
         <h2>Admin</h2>
         <a href="<?= WEB ?>/admin/index.php">Prehlad</a>
+        <a href="<?= WEB ?>/admin/pridat.php">Pridat clanok</a>
         <a href="<?= WEB ?>/index.php">Pozriet web</a>
         <a href="<?= WEB ?>/admin/odhlasit.php">Odhlasit sa</a>
     </aside>

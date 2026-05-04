@@ -24,6 +24,17 @@ class Clanok
         return $stmt->fetchAll();
     }
 
+    public function dajVsetkyAdmin(): array
+    {
+        $sql = "SELECT c.*, p.meno AS autor
+                FROM clanky c
+                LEFT JOIN pouzivatelia p ON c.pouzivatel_id = p.id
+                ORDER BY c.id DESC";
+
+        $stmt = $this->db->query($sql);
+        return $stmt->fetchAll();
+    }
+
     public function dajJedenPodlaId(int $id): array|false
     {
         $sql = "SELECT c.*, p.meno AS autor
@@ -35,5 +46,21 @@ class Clanok
         $stmt->execute(['id' => $id]);
 
         return $stmt->fetch();
+    }
+
+    public function pridaj(array $data): bool
+    {
+        $sql = "INSERT INTO clanky (pouzivatel_id, nazov, perex, obsah, publikovany)
+                VALUES (:pouzivatel_id, :nazov, :perex, :obsah, :publikovany)";
+
+        $stmt = $this->db->prepare($sql);
+
+        return $stmt->execute([
+            'pouzivatel_id' => $data['pouzivatel_id'],
+            'nazov' => $data['nazov'],
+            'perex' => $data['perex'],
+            'obsah' => $data['obsah'],
+            'publikovany' => $data['publikovany']
+        ]);
     }
 }
