@@ -10,3 +10,7 @@ define('NAZOV_WEBU', 'Tech blog');
 define('WEB', 'http://localhost/blog');
 
 define('KOREN', __DIR__);
+
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}

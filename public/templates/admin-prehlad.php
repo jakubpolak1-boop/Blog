@@ -2,7 +2,7 @@
 
 <div class="karta">
     <h2>Admin rozhranie</h2>
-    <p>Toto je zatial len prvy zaklad admin casti.</p>
+    <p>Prihlaseny pouzivatel: <strong><?= htmlspecialchars($_SESSION['admin_meno'] ?? '') ?></strong></p>
 </div>
 
 <div class="karta">
